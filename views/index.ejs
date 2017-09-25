@@ -1,0 +1,40 @@
+<% include header %>
+  <header>
+      <h1>DIGITAL CORRIDOR</h1>
+      <nav>
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <div class="navmenu">
+          <a href="">About Me</a>
+          <a href="">About AP</a>
+          <a href="">My Posts</a>
+        </div>
+      </nav>
+  </header>
+  <main>
+      <div class="introduction">
+          <!--Introduction-->
+          <h2>Digital Corridor is a personal journey in front-end coding.</h2>
+          <p class="discription">Read my posts to discover newly-achieved knowledge and experience :)</p>
+      </div>
+      <div class="about">
+          <!--About section-->
+          <div class="about-1 about-items">
+              <h2>about me</h2>
+          </div>
+          <div class="about-2 about-items">
+              <h2>about AP</h2>
+          </div>
+      </div>
+      <div class="posts">
+          <!--Shortcuts to posts-->
+              <% var teller = 1; %>
+              <% nieuws.forEach(function(item){ %>
+                <section>
+                    <h3>
+                      <a href=/items/<%- item.id %>><%- item.titel %></a>
+                    </h3>
+                </section>
+              <% teller++;}); %>
+      </div>
+   </main>
+<% include footer %>

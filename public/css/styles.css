@@ -1,0 +1,123 @@
+body {
+  font-family: 'helvetica', sans-serif;
+  line-height: 1.4em;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 60px auto;
+}
+
+header {
+  background: #000000;
+  grid-column: 1 / 7;
+  padding: 20px;
+}
+
+.navmenu {
+  position: relative;
+  bottom: 36px;
+  float: right;
+}
+
+.navmenu a {
+  margin-right: 15px;
+  display: inline;
+}
+
+.navmenu a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navmenu a:hover {
+    color: yellow;
+}
+
+main {
+  grid-column: 1 / 7;
+}
+
+div.introduction {
+  display: grid;
+  height: 80vh;
+  background-image: url(../img/wallhaven-332429.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+div.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+div.about-items {
+  height: 300px;
+  cursor: pointer;
+}
+
+div.about-1 {
+  background-color: rgb(238, 215, 37);
+}
+
+div.about-2 {
+  background-color: rgb(37, 221, 199);
+}
+
+div.posts {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+section {
+  height: 250px;
+  background-color: grey;
+}
+
+footer {
+  grid-column: 1 / 7;
+  height: 20vh;
+  background: #000000;
+}
+
+h1 {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 150px;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+}
+
+section h3 {
+  font-size: 1.1em;
+  padding-top: 45%;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+p.discription {
+  color: #ffffff;
+  text-align: center;
+}
+
+.fa-bars {
+  font-size: 1.5em;
+  color: #ffffff;
+}
+
+.hidden {
+  display: none;
+}

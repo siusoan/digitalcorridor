@@ -1,0 +1,27 @@
+{
+  "name": "Digital Corridor",
+  "version": "1.0.0",
+  "description": "Mobile gaming news site",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "web",
+    "news",
+    "gaming",
+    "technology",
+    "node",
+    "express"
+  ],
+  "author": "Siu Soan",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
+  }
+}

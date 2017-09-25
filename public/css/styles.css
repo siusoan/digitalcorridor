@@ -38,7 +38,7 @@ main {
 
 div.introduction {
   display: grid;
-  height: 80vh;
+  height: auto;
   background-image: url(../img/wallhaven-332429.jpg);
   background-size: cover;
   background-position: center;
@@ -90,6 +90,7 @@ h2 {
   color: #ffffff;
   text-align: center;
   margin-top: 150px;
+  margin-bottom: 75px;
 }
 
 h3 {
@@ -111,6 +112,14 @@ p {
 p.discription {
   color: #ffffff;
   text-align: center;
+  margin-bottom: 75px;
+}
+
+footer p {
+  font-size: 0.9em;
+  color: rgb(147, 147, 147);
+  text-align: center;
+  padding-top: 60px;
 }
 
 .fa-bars {

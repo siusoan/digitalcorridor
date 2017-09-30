@@ -9,7 +9,7 @@ app.set('categoriesFile', require('./config/categories.json'));
 
 app.set("views", path.resolve(__dirname, "views"));
 app.set("view engine", "ejs");
-app.set('port', (process.env.PORT || 3000));
+app.set('port', (process.env.PORT || 5000));
 app.use(express.static('public'))
 
 app.use(require("./routes/root_router"));

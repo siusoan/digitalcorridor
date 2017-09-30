@@ -1,32 +1,15 @@
+/** === TABLE OF CONTENTS ===
+
+*/
+
+
+/* — General styling and layout —*/
 body {
   font-family: 'helvetica', sans-serif;
   line-height: 1.4em;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 60px auto;
-}
-
-header {
-  background: #000000;
-  grid-column: 1 / 7;
-  padding: 20px;
-}
-
-#navmenu {
-  position: relative;
-  bottom: 36px;
-  float: right;
-}
-
-a.navlink {
-  color: #ffffff;
-  text-decoration: none;
-  margin-right: 15px;
-  display: inline;
-}
-
-a.navlink:hover {
-    color: yellow;
 }
 
 main {
@@ -52,11 +35,11 @@ div.about-items {
 }
 
 div.about-1 {
-  background-color: rgb(238, 215, 37);
+  background-color: rgb(238, 215, 37); /*gold-yellow*/
 }
 
 div.about-2 {
-  background-color: rgb(37, 221, 199);
+  background-color: rgb(37, 221, 199); /*cyan green*/
 }
 
 div.posts {
@@ -67,14 +50,53 @@ div.posts {
 section {
   height: 250px;
   background-color: grey;
+  display: flex;
+  justify-content: center;
+}
+
+.standalone-article {
+  display: grid;
+  grid-column: 1 / 7;
+  height: auto;
+  background-color: inherit;
+  margin: 0 auto;
+}
+
+div.article-intro {
+  height: 50vh;
+  background-color: rgb(238, 215, 37);
+}
+
+div.article-info {
+  height: auto;
+  width: 40%;
+  margin: 50px auto;
+}
+
+
+/*2. HEADER AND FOOTER*/
+header {
+  background: #000000;
+  grid-column: 1 / 7;
+  padding: 20px;
+}
+
+#navmenu {
+  position: relative;
+  bottom: 36px;
+  float: right;
 }
 
 footer {
   grid-column: 1 / 7;
-  height: 20vh;
+  height: 10vh;
   background: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/*3. HEADINS AND PARAGRAPHS*/
 h1 {
   font-size: 1.4em;
   font-weight: bold;
@@ -88,6 +110,13 @@ h2 {
   text-align: center;
   margin-top: 150px;
   margin-bottom: 75px;
+}
+
+.standalone-article h2 {
+  font-size: 3.5em;
+  color: red;
+  margin-top: 180px;
+  margin-bottom: 45px;
 }
 
 h3 {
@@ -112,11 +141,18 @@ p.discription {
   margin-bottom: 75px;
 }
 
+p.article-date {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+p.article-body {
+  font-size: 1.5em;
+}
+
 footer p {
   font-size: 0.9em;
   color: rgb(147, 147, 147);
-  text-align: center;
-  padding-top: 60px;
 }
 
 .fa-bars {
@@ -127,6 +163,21 @@ footer p {
 .hidden {
   display: none;
 }
+
+/*LINKS AND IMAGES*/
+a.navlink {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 15px;
+  display: inline;
+}
+
+a.navlink:hover {
+    color: yellow;
+}
+
+
+/*MEDIA QUERIES*/
 
 @media screen and (max-width: 1045px) {
   h2 {
@@ -142,6 +193,5 @@ footer p {
 
 @media screen and (max-width: 666px) {
   .about {
-    
   }
 }

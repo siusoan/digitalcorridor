@@ -12,23 +12,20 @@ header {
   padding: 20px;
 }
 
-.navmenu {
+#navmenu {
   position: relative;
   bottom: 36px;
   float: right;
 }
 
-.navmenu a {
+a.navlink {
+  color: #ffffff;
+  text-decoration: none;
   margin-right: 15px;
   display: inline;
 }
 
-.navmenu a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.navmenu a:hover {
+a.navlink:hover {
     color: yellow;
 }
 
@@ -129,4 +126,22 @@ footer p {
 
 .hidden {
   display: none;
+}
+
+@media screen and (max-width: 1045px) {
+  h2 {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 831px) {
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 666px) {
+  .about {
+    
+  }
 }

@@ -15,12 +15,6 @@ function main() {
           for(i=0; i < posts.length; i++) {
               backgroundTiles(posts[i]);
           }*/
-
-          /*
-          var hamburger = document.getElementById("hamburgerMenu");
-          hamburger.onclick = function() {
-            var navigation = document.getElementById
-          }*/ 
 }
 
 window.onload = function() {

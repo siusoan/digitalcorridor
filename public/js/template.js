@@ -1,20 +1,23 @@
 function main() {
-          /*
-          var figures = document.getElementsByTagName("figure");
-          var teller = 0;
-          while (teller < figures.length) {
-            figures[teller].innerHTML = "<span class='upper'>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span>" + "<span class='left'>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span>" +  figures[teller].innerHTML + "<span class='bottom'>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span><span class='right'>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span>";
-            teller++;
-          }*/
+          var hamburger = document.getElementById("hamburger-icon");
+          function toggleMenu(x) {
+              var linkClass = x.classList;
+              if(linkClass.contains("responsive")) {
+                    linkClass.remove("responsive");
+              } else {
+                    linkClass.add("responsive");
+                    linkClass.remove("hidden");
+              }
 
-          /*
-          function backgroundTiles(x) {
-              this.style.backgroundImage("");
           }
-          var posts = document.getElementsByTagName("section");
-          for(i=0; i < posts.length; i++) {
-              backgroundTiles(posts[i]);
-          }*/
+
+          hamburger.onclick = function() {
+              console.log("hello");
+              var navLinks = document.getElementsByClassName("navlink");
+              for(i=0; i < navLinks.length; i++) {
+                    toggleMenu(navLinks[i]);
+              }
+          }
 }
 
 window.onload = function() {

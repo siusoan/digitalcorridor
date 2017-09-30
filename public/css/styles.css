@@ -166,9 +166,7 @@ footer p {
   color: #ffffff;
 }
 
-.hidden {
-  display: none;
-}
+
 
 /*LINKS AND IMAGES*/
 header h1>a {
@@ -190,8 +188,24 @@ a.navlink:hover {
     color: yellow;
 }
 
+.hamburger {
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+
+
+
+a.responsive:first-child {
+  margin-top: 40px !important;
+}
 
 /*MEDIA QUERIES*/
+@media screen and (min-width: 830px) {
+  .responsive {
+
+  }
+}
 
 @media screen and (max-width: 1045px) {
   h2 {
@@ -202,6 +216,28 @@ a.navlink:hover {
 @media screen and (max-width: 831px) {
   h2 {
     font-size: 1.5em;
+  }
+  .hamburger {
+    font-size: 2em;
+    display: inline;
+    position: relative;
+    bottom: 42px;
+    float: right;
+  }
+  #navmenu {
+    bottom: 40px;
+  }
+  .responsive {
+    width: 80%;
+    font-size: 1.5em;
+    background-color: #000000;
+    display: block !important;
+    margin-right: 60px !important;
+    padding: 25px 19%;
+    text-align: center;
+  }
+  a.navlink {
+    display: none;
   }
 }
 

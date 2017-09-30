@@ -14,11 +14,11 @@ body {
 
 main {
   grid-column: 1 / 7;
+  min-height: 90vh;
 }
 
 div.introduction {
   display: grid;
-  height: auto;
   background-image: url(../img/wallhaven-332429.jpg);
   background-size: cover;
   background-position: center;
@@ -146,8 +146,14 @@ p.article-date {
   text-align: center;
 }
 
-p.article-body {
-  font-size: 1.5em;
+p.article-paragraph {
+  font-size: 1.6em;
+  line-height: 1.2em;
+  margin-bottom: 15px;
+}
+
+p.tags {
+  margin-top: 30px;
 }
 
 footer p {
@@ -165,6 +171,14 @@ footer p {
 }
 
 /*LINKS AND IMAGES*/
+header h1>a {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
 a.navlink {
   color: #ffffff;
   text-decoration: none;

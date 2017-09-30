@@ -194,25 +194,12 @@ a.navlink:hover {
   cursor: pointer;
 }
 
-
-
-a.responsive:first-child {
-  margin-top: 40px !important;
-}
-
 /*MEDIA QUERIES*/
-@media screen and (min-width: 830px) {
-  .responsive {
-
-  }
-}
-
 @media screen and (max-width: 1045px) {
   h2 {
     font-size: 1.8em;
   }
 }
-
 @media screen and (max-width: 831px) {
   h2 {
     font-size: 1.5em;
@@ -236,11 +223,13 @@ a.responsive:first-child {
     padding: 25px 19%;
     text-align: center;
   }
+  a.responsive:first-child {
+    margin-top: 40px !important;
+  }
   a.navlink {
     display: none;
   }
 }
-
 @media screen and (max-width: 666px) {
   .about {
   }

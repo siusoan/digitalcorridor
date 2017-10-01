@@ -1,0 +1,20 @@
+<% include header %>
+
+<h1><a href="/">Nieuws demo homepage</a></h1>
+
+<h2>Nieuwsitems voor categorie <%- tags[id] %></h2>
+
+  <% for (var i = 0; i < items.length; i++) { %>
+    <% if (items[i].tags.indexOf(tags[id]) !== -1) { %>
+      <!--Hierboven wordt gekeken of een artikel meer als één categorie heeft-->
+      <section>
+          <h2>
+            <a href=/items/<%- items[i].id %>><%- items[i].title %></a>
+          </h2>
+          <img src="/img/<%- items[i].afbeeldings %>" alt="<%- items[i].titel %>">
+          <p><%- items[i].date %></p>
+      </section>
+    <% } %>
+  <% } %>
+
+<% include footer %>

@@ -1,0 +1,19 @@
+{
+    "aboutArray":
+    [
+        {
+            "title": "About Me",
+            "id": "about-me",
+            "body": "<p class=\"article-paragraph\">Volgens computerspecialist Jeroen Lemaire wordt de verwevenheid tussen mens en computer steeds groter. Op de ontwikkelaarsconferentie Google I/O in Mountain View heeft Google een dertigtal nieuwe ontwikkelingen voorgesteld. 'Wat opvalt is dat de verwevenheid tussen mens en computer steeds groter wordt. De computer gaat denken als een mens en de programma's krijgen zelflerende software', aldus Lemaire in 'Van Gils & Gasten'.</p><p class=\"article-paragraph\">De topman van Google, Sundar Pichai, heeft op de ontwikkelaarsconferentie Google I/O in Mountain View in de VS de nieuwste ontwikkelingen van de internetgigant voorgesteld. Google heeft de Google Assistant een grondige update gegeven en ontwikkelde ook Google Lens.</p>",
+            "afbeeldingl": "1047178140.jpg",
+            "afbeeldings": "1047178140-1.jpg"
+        },
+        {
+            "title": "About AP",
+            "id": "about-ap",
+            "body": "<p>De 'bloktijd' is opnieuw aangebroken, studenten buigen zich stilaan weer over hun cursussen en boeken. Hoe worstel je jezelf erdoor? Voor onze studerende medemens diepen we graag deze tips van de UGent nog eens op.</p><p>De UGent verspreidde vorig jaar een brochure onder zijn studenten onder het motto 'efficiënter studeren', met concrete tips voor de verschillende fases van het studieproces: van de voorbereiding over de planning tot het studeren zelf.</p>",
+            "afbeeldingl": "4231643-1.jpg",
+            "afbeeldings": "4231643.jpg"
+        }
+    ]
+}

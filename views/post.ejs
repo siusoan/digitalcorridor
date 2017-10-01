@@ -1,0 +1,22 @@
+<% include header %>
+<main>
+  <section class="standalone-article">
+      <div class="article-intro" data-image-src="/img/<%- item.afbeeldingl %>">
+        <h2>
+          <%- item.title %>
+        </h2>
+        <p class="article-date"><%- item.date %></p>
+      </div>
+      <div class="article-info">
+          <%- item.body %>
+        <p class="tags">Gepost in categorieën:
+          <% for (var i = 0; i < item.tags.length; i++) { %>
+            <a href="/tags/<%- i %>"><%- item.tags[i] %></a><% if (i+1< item.tags.length){ %>, <% } %>
+          <% } %>
+        </p>
+      </div>
+      <!--<img src="/img/<%- item.afbeeldingl %>" alt="<%- item.titel %>">-->
+  </section>
+</main>
+
+<% include footer %>

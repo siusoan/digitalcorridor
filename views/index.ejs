@@ -17,10 +17,10 @@
       <div class="posts">
           <!--Shortcuts to posts-->
               <% var teller = 1; %>
-              <% nieuws.forEach(function(item){ %>
+              <% posts.forEach(function(item){ %>
                 <section>
                     <h3>
-                      <a href=/items/<%- item.id %>><%- item.titel %></a>
+                      <a href=/items/<%- item.id %>><%- item.title %></a>
                     </h3>
                 </section>
               <% teller++;}); %>

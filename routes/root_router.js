@@ -3,8 +3,8 @@ var root = express.Router();
 
 root.get('/', function(req, res) {
   res.render("index", {
-    nieuws: req.app.get('postsFile').nieuws,
-    categorieen: req.app.get('categoriesFile').categorieen
+    posts: req.app.get('postsFile').postsArray,
+    tags: req.app.get('tagsFile').tagsArray
   });
 });
 
